@@ -1,6 +1,6 @@
 # Catálogo
 
-O que este kit documenta. Listas de nomes: `agency-skills.txt`, `agents-skills.txt`, `cursor-builtin-skills.txt`.
+O que o Lazy Goat Dev Toolkit documenta. Listas de nomes: `agency-skills.txt`, `agents-skills.txt`, `cursor-builtin-skills.txt`.
 
 ## Skills deste repo (`~/.cursor/skills` depois do install)
 

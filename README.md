@@ -1,6 +1,6 @@
-# cursor-kit
+# Lazy Goat Dev Toolkit
 
-Skills e regras para o Cursor: auto-work (inbox), humanizer, Graphify. Catálogo do Graphify, agency-agents e das MCPs que este kit usa.
+Skills e regras para o Cursor: auto-work (inbox), humanizer, Graphify. Catálogo do Graphify, agency-agents e das MCPs que o toolkit usa.
 
 Notas do vault ficam fora do git, numa pasta local `cursor-brain`. `mcp.json` fica na máquina.
 
