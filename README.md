@@ -1,5 +1,9 @@
 # Lazy Goat Dev Toolkit
 
+<p align="center">
+  <img src="docs/lazy-goat.png" alt="Cabra preguiçosa no escritório, ao lado de um laptop" width="720">
+</p>
+
 Skills e regras para o Cursor: auto-work (inbox), humanizer, Graphify. Catálogo do Graphify, agency-agents e das MCPs que o toolkit usa.
 
 Notas do vault ficam fora do git, numa pasta local `cursor-brain`. `mcp.json` fica na máquina.
