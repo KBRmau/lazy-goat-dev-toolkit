@@ -1,0 +1,13 @@
+.env
+.env.local
+*.pem
+*.key
+credentials.json
+mcp.json
+hooks.json
+graphify-out/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

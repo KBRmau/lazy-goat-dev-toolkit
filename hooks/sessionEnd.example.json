@@ -1,0 +1,8 @@
+{
+  "sessionEnd": [
+    {
+      "command": "python ~/.cursor/hooks/session_end_graphify.py",
+      "timeout": 20
+    }
+  ]
+}

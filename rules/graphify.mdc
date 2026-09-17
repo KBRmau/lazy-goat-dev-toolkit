@@ -1,0 +1,25 @@
+---
+description: Graphify knowledge graph. Use when the current repo has graphify-out/
+alwaysApply: true
+---
+
+# Graphify (global)
+
+Upstream: https://github.com/Graphify-Labs/graphify
+
+CLI: `graphify` (installed via `uv tool install graphifyy`). Graphs live in each repo's `graphify-out/`.
+
+## Current project
+
+If `graphify-out/graph.json` exists in the workspace:
+
+1. Prefer before blind Grep/Glob exploration:
+   - `graphify query "<question>"` (cwd = project root, or `--graph path/to/graphify-out/graph.json`)
+   - `graphify path "A" "B"`
+   - `graphify explain "<concept>"`
+2. Use Read/Grep for edits and line-level debug after the graph oriented you.
+3. After substantial code changes: `graphify update .`
+
+If there is no `graphify-out/` yet, explore normally; offer `graphify update .` when indexing would help.
+
+Do not require Graphify on every trivial edit. Do not invent that a graph exists if `graph.json` is missing.
