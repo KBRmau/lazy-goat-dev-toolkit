@@ -6,7 +6,7 @@ O que o Lazy Goat Dev Toolkit documenta. Listas de nomes: `agency-skills.txt`, `
 
 | Skill | Quando |
 | --- | --- |
-| `auto-work` | Inbox, digest, standup, plan, brain |
+| `auto-work` | Inbox, digest, standup, briefing, weekly, brag-doc, brain |
 | `humanizer` | Prosa visível. Regra: `rules/humanizer.mdc`. Upstream: https://github.com/blader/humanizer |
 
 ## Regras always-on (`~/.cursor/rules`)

@@ -19,7 +19,7 @@ Notas do vault ficam fora do git, numa pasta local `cursor-brain`. `mcp.json` fi
 
 | Path | Conteúdo |
 | --- | --- |
-| `skills/auto-work/` | Inbox P0–P4, digest, standup, plan, brain |
+| `skills/auto-work/` | Inbox P0–P4, digest, standup, briefing, weekly, brag-doc, brain |
 | `skills/humanizer/` | Prosa 3.0.0 |
 | `rules/` | `humanizer.mdc`, `graphify.mdc` (`alwaysApply`) |
 | `hooks/session_end_graphify.py` | Nota de fim de sessão no vault |
@@ -46,6 +46,9 @@ Um item de inbox por tick. Não envia Slack.
 | `/auto-work` | Tick da fila |
 | `/auto-work digest` ou `resumo` | Índice 24h em `<vault>/digest/` |
 | `/auto-work daily` | Standup |
+| `/auto-work briefing` | Quadro de status (loop 15 min) |
+| `/auto-work weekly` ou `semana` | Recap da semana ISO (`<vault>/digest/YYYY-Www-weekly.md`) |
+| `/auto-work brag-doc` | Brag-doc mensal (`<vault>/brag.md`) |
 | `/auto-work plan` | Dry-run (também `draft`, `dry-run`) |
 | `/auto-work brain` | Query Graphify no vault |
 | `/loop 15m /auto-work` | Loop de inbox |

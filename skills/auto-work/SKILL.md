@@ -6,8 +6,10 @@ description: >
   ticket). Use when the user
   says auto-work, /auto-work, autoworker, inbox tick, standup of PRs/tickets,
   or /loop 15m /auto-work. Dry-run: /auto-work plan (also draft, dry-run).
-  Builds a 07:00 weekday standup briefing (/auto-work daily). Also handles
-  Graphify brain queries on the personal cursor-brain vault. Never sends Slack/Teams.
+  Builds a 07:00 weekday standup (/auto-work daily), a 15m status board
+  (/auto-work briefing), a week recap (/auto-work weekly), and a monthly
+  brag-doc (/auto-work brag-doc). Also handles Graphify brain queries on
+  the personal cursor-brain vault. Never sends Slack/Teams.
 ---
 
 # Auto-work
@@ -24,10 +26,13 @@ Read [inbox.md](inbox.md) for Jira/GitHub/Slack commands.
 1. Read this skill and `queue.md`.
 2. Load or create the state file for the current workspace.
 3. If the prompt is `digest` or `resumo`: follow **Daily digest**, then stop.
-4. If the prompt is `daily`, `standup`, or `briefing`: follow [daily.md](daily.md), then stop.
-5. If the prompt is `plan`, `draft`, or `dry-run`: follow [plan.md](plan.md), then stop.
-6. If the prompt is `brain` / a question about past sessions: follow **Brain**, then stop.
-7. Otherwise run **Inbox tick**.
+4. If the prompt is `daily` or `standup`: follow [daily.md](daily.md), then stop.
+5. If the prompt is `briefing` or `status`: follow [briefing.md](briefing.md), then stop.
+6. If the prompt is `weekly` or `semana`: follow [weekly.md](weekly.md), then stop.
+7. If the prompt is `brag-doc`, `brag`, or `bragdoc`: follow [brag-doc.md](brag-doc.md), then stop.
+8. If the prompt is `plan`, `draft`, or `dry-run`: follow [plan.md](plan.md), then stop.
+9. If the prompt is `brain` / a question about past sessions: follow **Brain**, then stop.
+10. Otherwise run **Inbox tick**.
 
 ## Inbox tick
 
@@ -98,7 +103,7 @@ Pasted meeting transcript: write `<vault>/meetings/YYYY-MM-DD-<slug>.md` with ti
 
 ## Loop
 
-Inbox: `/loop 15m /auto-work`. Standup: weekday 07:00 local, prompt `/auto-work daily`. Follow `~/.cursor/skills-cursor/loop/SKILL.md`. Do not arm a loop yourself.
+Inbox: `/loop 15m /auto-work`. Status board: `/loop 15m /auto-work briefing`. Standup: weekday 07:00 local, prompt `/auto-work daily`. Weekly and brag-doc are on-demand (`/auto-work weekly`, `/auto-work brag-doc`). Follow `~/.cursor/skills-cursor/loop/SKILL.md`. Do not arm a loop yourself.
 
 ## Out of scope
 
