@@ -11,8 +11,8 @@ Standup script. Portuguese unless the team speaks English. Humanizer. About 45â€
 1. `python ~/.cursor/skills/auto-work/scripts/daily_digest.py` then read that file.
 2. Jira: `assignee = currentUser() AND status not in (Done, Closed, Canceled) ORDER BY updated DESC` (limit 10).
 3. GitHub this repo: open PRs by you, human review comments on those PRs, failing checks. Do not turn CODEOWNERS review-requested on other PRs into standup work.
-4. Slack: skip until MCP tools are listed and authenticated. If the user pasted a thread, one line.
-5. Granola/meetings: titles from `meetings/` in the last 24h only.
+4. Slack: `conversations_unreads` (mentions/DMs) if `user-slack` is listed. If the user pasted a thread, one line.
+5. Granola: `list_meetings` or `query_granola_meetings` for the last 24h if `user-granola` is listed. Also titles from `<vault>/meetings/`.
 
 ## Output (chat + vault)
 

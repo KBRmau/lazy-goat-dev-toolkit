@@ -58,13 +58,13 @@ Tokens em `~/.cursor/mcp.json` local. Fora deste git.
 | --- | --- | --- |
 | Atlassian | Jira P3/P4. Transições depois do accept. | https://github.com/atlassian/atlassian-mcp-server e `https://mcp.atlassian.com/v2/mcp` |
 | GitHub | PRs seus, reviews. | https://github.com/github/github-mcp-server e `https://api.githubcopilot.com/mcp/` |
-| Slack | P1 quando autenticado. Nunca postar. | https://docs.slack.dev/ai/slack-mcp-server/ e `https://mcp.slack.com/mcp` |
+| Slack | P1 (mentions/DMs). Nunca postar. Stdio `npx slack-mcp-server`. | https://github.com/korotovsky/slack-mcp-server |
 | Trello | Quadros. | https://github.com/atlassian/trello-mcp-server e `https://mcp.trello.com/v1` |
 | Magnific | Imagem e vídeo. | https://www.magnific.com/mcp , https://docs.magnific.com/modelcontextprotocol e `https://mcp.magnific.com` |
 | Meta Ads | Ads. | https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview e `https://mcp.facebook.com/ads` |
 | Figma | Design. | https://github.com/figma/mcp-server-guide e `https://mcp.figma.com/mcp` |
 | Stripe | Conta Stripe. Plugin ou `https://mcp.stripe.com`. | https://docs.stripe.com/mcp e https://github.com/stripe/ai |
-| Granola | Reuniões, opcional. | `https://mcp.granola.ai/mcp` |
+| Granola | Reuniões. OAuth remoto. | `https://mcp.granola.ai/mcp` |
 
 ## Vault
 

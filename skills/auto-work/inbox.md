@@ -27,14 +27,14 @@ Do not `jira_transition_issue` or `jira_add_comment` until accept.
 
 ## Slack
 
-See [slack.md](slack.md).
+See [slack.md](slack.md). Namespace `user-slack` (`slack-mcp-server` stdio).
 
-If Slack MCP tools are listed and authenticated, read mentions and DMs only (P1). Draft in chat. Never post.
+If tools are listed: `conversations_unreads` (mentions/DMs) and optional `conversations_search_messages`. Draft in chat. Never post.
 
 If the namespace is `needsAuth` or absent: skip P1 Slack, one sentence in the tick report. Do not start OAuth from a tick.
 
 ## Meetings
 
-See [granola.md](granola.md).
+See [granola.md](granola.md). Namespace `user-granola`.
 
-If a Granola MCP tool is listed, pull the meeting you own and save markdown under `<vault>/meetings/`. If it is absent, the user pastes the transcript (or CSV export). Index with Graphify. Do not scrape the Granola app folder.
+If tools are listed: `list_meetings` or `query_granola_meetings` for notes you own, then save markdown under `<vault>/meetings/`. If absent, the user pastes the transcript (or CSV export). Index with Graphify. Do not scrape the Granola app folder.

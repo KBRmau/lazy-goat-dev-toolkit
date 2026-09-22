@@ -54,7 +54,7 @@ If nothing is actionable: write `idle` in state, report empty inbox, stop.
 
 ### Slack
 
-Skip P1 Slack until tools are listed and authenticated (`slack.md`). Never post, never react, never open DMs. Never OAuth from a tick. CODEOWNERS `review-requested:@me` on other people's PRs is not a tick.
+Skip P1 Slack if `user-slack` is missing or `needsAuth` (`slack.md`). When tools are listed, read unreads/mentions only. Never post, never react, never open DMs. Never OAuth from a tick. CODEOWNERS `review-requested:@me` on other people's PRs is not a tick.
 
 ### Text
 

@@ -50,7 +50,7 @@ Um item de inbox por tick. Não envia Slack.
 | `/auto-work brain` | Query Graphify no vault |
 | `/loop 15m /auto-work` | Loop de inbox |
 
-Fila: P0 CI/conflito no PR seu, P1 Slack (quando o MCP autenticar), P2 review humano no PR seu, P3 ticket com critério, P4 ticket vago.
+Fila: P0 CI/conflito no PR seu, P1 Slack (MCP stdio, só leitura), P2 review humano no PR seu, P3 ticket com critério, P4 ticket vago.
 
 ## Instalar
 

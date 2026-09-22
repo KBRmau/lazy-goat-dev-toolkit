@@ -1,15 +1,16 @@
 # Granola
 
-Endpoint: `https://mcp.granola.ai/mcp` (OAuth). Do not put tokens in `mcp.json`.
+Official remote MCP: `https://mcp.granola.ai/mcp` (OAuth). Do not put tokens in `mcp.json`.
 
-Until MCP tools are listed: user pastes the transcript. Save under `<vault>/meetings/YYYY-MM-DD-<slug>.md` and run `graphify update` on the vault.
+Cursor namespace: `user-granola`. Tools: `get_account_info`, `query_granola_meetings`, `list_meetings`, `get_meetings`, `get_meeting_transcript`, `list_meeting_folders`.
+
+If the namespace is missing or `needsAuth`: user pastes the transcript. Save under `<vault>/meetings/YYYY-MM-DD-<slug>.md` and run `graphify update` on the vault.
 
 When connected:
 
-1. Call `get_account_info` (or equivalent) and confirm the signed-in account.
-2. Pull notes/transcripts you own.
-3. Write each meeting to `<vault>/meetings/` (verbatim transcript + title/date). Then Graphify update. Do not rewrite the transcript.
+1. `get_account_info` if you need to confirm the signed-in account.
+2. For standup / digest (last 24h): `list_meetings` (narrow with `involvement.captured_by_me` when the user asked for their notes) or `query_granola_meetings`.
+3. For a specific meeting: `get_meetings` then `get_meeting_transcript` when the user needs verbatim quotes.
+4. Write each meeting you persist to `<vault>/meetings/` (title, date, attendees if given, transcript or notes). Then Graphify update. Do not rewrite the transcript.
 
-Free/Basic MCP: last 30 days; `get_meeting_transcript` is paid-plan. If transcript tools are missing, ask the user to paste or use Settings > Profile > Generate CSV.
-
-Never scrape the Granola desktop folder. Prefer official MCP, then paste, then CSV export.
+Never scrape the Granola desktop folder. Prefer MCP, then paste, then CSV export.

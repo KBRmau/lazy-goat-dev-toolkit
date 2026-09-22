@@ -8,7 +8,7 @@ Dry-run of one inbox tick. Read-only.
 
 ## Do
 
-1. Scan the same sources as an inbox tick (`inbox.md`): own PRs (P0), Slack mentions if authenticated (P1), human reviews on PRs you authored (P2), assigned Jira (P3/P4). Do not treat `review-requested:@me` on other people's PRs as a tick.
+1. Scan the same sources as an inbox tick (`inbox.md`): own PRs (P0), Slack unreads/mentions if `user-slack` is listed (P1), human reviews on PRs you authored (P2), assigned Jira (P3/P4). Granola is standup/digest, not a queue tick. Do not treat `review-requested:@me` on other people's PRs as a tick.
 2. Walk P0 then P1 then P2 then P3 then P4. Mark the first item that a live tick would start. Mark later items as waiting.
 3. Honour `last_ids` in the state file: label those skip (already seen) unless the user said retry.
 4. Write `<vault>/digest/YYYY-MM-DD-plan.md` and summarise in chat.
